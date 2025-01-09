@@ -25,7 +25,7 @@
         const context = screen.getContext('2d')
         const currentPlayerId = 'player1'
 
-        const game = {
+        const state = {
             players: {
                 'player1': {x: 1, y: 1},
                 'player2': {x: 9, y: 9}
@@ -45,6 +45,8 @@
                 movePlayer
             }
         }
+
+        const game = createGame()
 
         document.addEventListener('keydown', handleKeydown)
 
